@@ -20,6 +20,22 @@
         id="card-container"
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
       ></section>
+      <!-- Open the modal using ID.showModal() method -->
+
+      <dialog id="show_details_modal" class="modal">
+        <div class="modal-box w-11/12 max-w-5xl">
+          <div
+            id="modal-content-container"
+            class="flex flex-col md:flex-row items-center justify-center gap-4"
+          ></div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
     <script src="./js/scripts.js"></script>
   </body>
